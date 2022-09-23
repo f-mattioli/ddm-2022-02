@@ -11,5 +11,12 @@ export class ExerciciosService {
     return n1 + n2;
   }
 
+  calculaDobro(n : number) {
+    return 2 * n;
+  }
+
+  calculaTriplo(n : number) {
+    return 3 * n;
+  }
 
 }

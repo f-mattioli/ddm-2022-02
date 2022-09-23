@@ -10,10 +10,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { ExerciciosService } from './servicos/exercicios.service';
 import { FormsModule } from '@angular/forms';
 import { SomaComponent } from './soma/soma.component';
+import { DobroTriploComponent } from './dobro-triplo/dobro-triplo.component';
 
 @NgModule({
   declarations: [AppComponent,
-    SomaComponent],
+    SomaComponent,
+    DobroTriploComponent],
   imports: [BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,

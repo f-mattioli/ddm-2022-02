@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 import { SomaComponent } from './soma/soma.component';
+import { DobroTriploComponent } from './dobro-triplo/dobro-triplo.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'soma',
     component: SomaComponent
+  },
+  {
+    path: 'dobro',
+    component: DobroTriploComponent
   },
 ];
 

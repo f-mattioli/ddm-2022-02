@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Exercício 02: Dobro/Triplo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>Dobro:</h4>
+  <form (ngSubmit)="dobro()">
+    <ion-input type="number" placeholder="Informe o número:" name="n1"
+      [(ngModel)]="n1"></ion-input>
+
+    <ion-button type="submit">Dobro</ion-button>
+
+    <h5>{{saidaDobro}}</h5>
+  </form>
+  
+  <form (ngSubmit)="triplo()">
+    <ion-input type="number" placeholder="Informe o número:" name="n2"
+      [(ngModel)]="n2"></ion-input>
+
+    <ion-button type="submit">Triplo</ion-button>
+
+    <h5>{{saidaTriplo}}</h5>
+  </form>
+
+</ion-content>

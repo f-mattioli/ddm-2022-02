@@ -11,11 +11,15 @@ import { ExerciciosService } from './servicos/exercicios.service';
 import { FormsModule } from '@angular/forms';
 import { SomaComponent } from './soma/soma.component';
 import { DobroTriploComponent } from './dobro-triplo/dobro-triplo.component';
+import { ParOuImparComponent } from './par-ou-impar/par-ou-impar.component';
+import { PrimoComponent } from './primo/primo.component';
 
 @NgModule({
   declarations: [AppComponent,
     SomaComponent,
-    DobroTriploComponent],
+    DobroTriploComponent,
+    ParOuImparComponent,
+    PrimoComponent],
   imports: [BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,

@@ -3,6 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 import { SomaComponent } from './soma/soma.component';
 import { DobroTriploComponent } from './dobro-triplo/dobro-triplo.component';
+import { ParOuImparComponent } from './par-ou-impar/par-ou-impar.component';
+import { PrimoComponent } from './primo/primo.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,15 @@ const routes: Routes = [
     path: 'dobro',
     component: DobroTriploComponent
   },
+  {
+    path: 'parImpar',
+    component: ParOuImparComponent
+  },
+ {
+    path: 'primo',
+    component: PrimoComponent
+  },
+
 ];
 
 @NgModule({

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Exercício 03: Par/Ímpar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>Par ou ímpar:</h4>
+  <form (ngSubmit)="parImpar()">
+    <ion-input type="number" placeholder="Informe o número:" name="numero"
+      [(ngModel)]="numero"></ion-input>
+
+    <ion-button type="submit">Par/ímpar?</ion-button>
+
+    <h5>{{saida}}</h5>
+  </form>
+</ion-content>

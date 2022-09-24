@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Exercício 04: Primo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>Primo:</h4>
+  <form (ngSubmit)="primo()">
+    <ion-input type="number" placeholder="Informe o número:" name="numero"
+      [(ngModel)]="numero"></ion-input>
+
+    <ion-button type="submit">Número primo?</ion-button>
+
+    <h5>{{saida}}</h5>
+  </form>
+</ion-content>

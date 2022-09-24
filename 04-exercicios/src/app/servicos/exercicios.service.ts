@@ -18,5 +18,25 @@ export class ExerciciosService {
   calculaTriplo(n : number) {
     return 3 * n;
   }
+  
+  verificaParOuImpar(n : number) {
+    if (n % 2 == 0) {
+      return "PAR";
+    } else {
+      return "ÍMPAR";
+    }
+  }
+
+  verificaPrimo(n : number) {
+    if (n <= 2)
+      return "PRIMO";
+
+    for (let i = 2; i < n - 1; ++i) {
+      if (n % i == 0)
+        return "NÃO É PRIMO";
+    }
+
+    return "PRIMO";
+  }
 
 }
